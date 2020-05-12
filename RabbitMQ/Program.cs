@@ -21,8 +21,6 @@ namespace RabbitMQ.Publish
                 factory.VirtualHost = "development";
                 factory.HostName = "localhost";
                 factory.Port = 5672;
-                factory.ContinuationTimeout = TimeSpan.FromMinutes(1);
-                factory.RequestedHeartbeat = TimeSpan.FromSeconds(300);
                 #endregion
 
                 //Criando conexão
@@ -35,6 +33,7 @@ namespace RabbitMQ.Publish
                 var queueName = "Minha_Queue";
 
                 _channel.ExchangeDeclare(exchangeName, ExchangeType.Fanout);
+                                    //nameQueue, durable, exclusive, autodelete, arguments
                 _channel.QueueDeclare(queueName, false, false, false, null);
                 _channel.QueueBind(queueName, exchangeName, string.Empty, null);
 
@@ -43,7 +42,7 @@ namespace RabbitMQ.Publish
                 {
                     //Enviando msg
                     PublishMsg(exchangeName, $"{i} - Olá Mundo!");
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
                 }
             }
             catch (Exception ex)

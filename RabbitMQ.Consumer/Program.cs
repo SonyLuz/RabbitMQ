@@ -21,8 +21,6 @@ namespace RabbitMQ.Consumer
                 factory.VirtualHost = "development";
                 factory.HostName = "localhost";
                 factory.Port = 5672;
-                factory.ContinuationTimeout = TimeSpan.FromMinutes(1);
-                factory.RequestedHeartbeat = TimeSpan.FromSeconds(300);
                 #endregion
 
                 //Criando conexão
