@@ -1,4 +1,4 @@
-# RabbitMQ publish and consume message
+# RabbitMQ - publish and consume message
 Console of example to publish/read in of message.
 
 ## Structure:
