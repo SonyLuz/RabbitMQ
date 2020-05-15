@@ -1,6 +1,5 @@
 ﻿using RabbitMQ.Client;
 using System;
-using System.Text;
 using System.Threading;
 
 namespace RabbitMQ.Publish
@@ -31,9 +30,9 @@ namespace RabbitMQ.Publish
 
                 var exchangeName = "Minha_Exchange";
                 var queueName = "Minha_Queue";
-
-                _channel.ExchangeDeclare(exchangeName, ExchangeType.Fanout);
-                                    //nameQueue, durable, exclusive, autodelete, arguments
+                                        //exchangeName, type, durable, exclusive, autodelete, arguments
+                _channel.ExchangeDeclare(exchangeName, ExchangeType.Fanout, false, false, null);
+                                    //queueName, durable, exclusive, autodelete, arguments
                 _channel.QueueDeclare(queueName, false, false, false, null);
                 _channel.QueueBind(queueName, exchangeName, string.Empty, null);
 

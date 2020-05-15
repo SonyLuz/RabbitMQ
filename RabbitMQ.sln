@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Publish", "RabbitMQ\RabbitMQ.Publish.csproj", "{79EF6982-8BB2-498C-AF44-438A40660A92}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A088FAAF-E19E-4319-BF5C-F987E452BC10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{2AF8897D-F4AD-44C0-A2F9-85F034D59785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{2AF8897D-F4AD-44C0-A2F9-85F034D59785}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Publish", "RabbitMQ.Publish\RabbitMQ.Publish.csproj", "{7151BFA4-0D45-4E3C-AF9D-2A8421A9F8C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79EF6982-8BB2-498C-AF44-438A40660A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79EF6982-8BB2-498C-AF44-438A40660A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79EF6982-8BB2-498C-AF44-438A40660A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79EF6982-8BB2-498C-AF44-438A40660A92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A088FAAF-E19E-4319-BF5C-F987E452BC10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A088FAAF-E19E-4319-BF5C-F987E452BC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A088FAAF-E19E-4319-BF5C-F987E452BC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{2AF8897D-F4AD-44C0-A2F9-85F034D59785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF8897D-F4AD-44C0-A2F9-85F034D59785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF8897D-F4AD-44C0-A2F9-85F034D59785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7151BFA4-0D45-4E3C-AF9D-2A8421A9F8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7151BFA4-0D45-4E3C-AF9D-2A8421A9F8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7151BFA4-0D45-4E3C-AF9D-2A8421A9F8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7151BFA4-0D45-4E3C-AF9D-2A8421A9F8C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
